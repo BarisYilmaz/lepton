@@ -150,7 +150,7 @@ export class LeptonEnum<T extends [string, ...string[]]> extends LeptonType<T[nu
 	 * Returns an array of all possible enum values
 	 * @returns Array of all enum values
 	 */
-	get options() {
+	get options(): T {
 		return this.values;
 	}
 }
@@ -244,6 +244,6 @@ export class LeptonNativeEnum<T extends EnumLike, Keys extends readonly string[]
  * }
  * const statusSchema = lepton.nativeEnum(Status);
  */
-export function nativeEnum<T extends EnumLike>(enumObject: T) {
+export function nativeEnum<T extends EnumLike>(enumObject: T): LeptonNativeEnum<T, [keyof T & string, ...(keyof T & string)[]]> {
 	return LeptonNativeEnum.create(enumObject);
 }
