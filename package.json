@@ -1,0 +1,39 @@
+{
+	"name": "lepton",
+	"version": "0.0.1",
+	"description": "Lepton - A lightweight TypeScript binary serialization & schema validation library.",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format cjs,esm --dts",
+		"release": "pnpm run build && changeset publish",
+		"lint": "tsc",
+		"test": "jest --env=node --coverage"
+	},
+	"author": "BarisYilmaz",
+	"license": "MIT",
+	"keywords": [
+		"lepton",
+		"serialization"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BarisYilmaz/lepton.git"
+	},
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"bugs": {
+		"url": "https://github.com/BarisYilmaz/lepton/issues"
+	},
+	"homepage": "https://github.com/BarisYilmaz/lepton",
+	"devDependencies": {
+		"@changesets/cli": "^2.27.8",
+		"@types/jest": "^29.5.13",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.3.0",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.2"
+	}
+}

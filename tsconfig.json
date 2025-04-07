@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"target": "es2022",
+		"resolveJsonModule": true,
+		"moduleDetection": "force",
+		"allowImportingTsExtensions": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"moduleResolution": "Bundler",
+		"isolatedModules": true,
+		"module": "ESNext",
+		"noEmit": true,
+		"lib": ["es2022", "dom", "dom.iterable"]
+	}
+}
