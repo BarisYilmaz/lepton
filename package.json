@@ -1,5 +1,5 @@
 {
-	"name": "lepton",
+	"name": "@thehadron/lepton",
 	"version": "0.0.1",
 	"description": "Lepton - A lightweight TypeScript binary serialization & schema validation library.",
 	"main": "dist/index.js",

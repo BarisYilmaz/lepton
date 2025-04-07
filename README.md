@@ -41,12 +41,16 @@ console.log("Decoded:", decoded);
 ### Primitives
 
 - `int8()`, `int16()`, `int32()`: Fixed-width integers
+- `uint8()`, `uint16()`, `uint32()`: Unsigned integers
 - `varint()`, `bigint()`: Variable-length big integers
 - `float()`: 32-bit floating point number
 - `double()`: 64-bit floating point number
 - `string()`: UTF-8 string
 - `bits(width)`: Bit-width specific integers (1-32 bits)
 - `nibble()`, `uint4()`: 4-bit integers (0-15)
+- `enum(values)`: Enum type with specific values
+- `nativeEnum()`: Native enum type (string or number)
+- `boolean()`: Boolean type (true/false)
 
 ### Object Types
 
