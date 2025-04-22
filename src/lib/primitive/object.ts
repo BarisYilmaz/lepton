@@ -6,7 +6,7 @@ import {type addQuestionMarks, type extendShape, type flatten, mergeShapes, type
 /**
  * Type representing an object shape with string keys and Lepton type values
  */
-export type ObjectShape = {
+type ObjectShape = {
 	[k: string]: LeptonTypeAny;
 };
 

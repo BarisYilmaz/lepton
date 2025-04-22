@@ -1,3 +1,4 @@
+import * as lepton from "./lib/lepton.ts";
 /**
  * @module
  * Lepton - A TypeScript schema validation and binary serialization library
@@ -36,5 +37,4 @@
  * const decoded = userSchema.decode(encoded);
  * ```
  */
-import * as lepton from "./lib/lepton.ts";
 export {lepton};

@@ -1,6 +1,6 @@
 {
 	"name": "@hadron/lepton",
-	"version": "0.0.1",
+	"version": "{VERSION}",
 	"exports": "./src/index.ts",
 	"license": "MIT",
 	"publish": {
